@@ -21,7 +21,7 @@ public class MainLoader extends AppCompatActivity{
     public double screenWidthRecycle;
     public int screenHeight;
     public float deltaImageSize;
-    public int timeProgressBar = 25;
+    public int timeProgressBar = 125;
 
     //styles
     public int imageWidth = Style.MainLoaderImageWidth;
@@ -89,6 +89,7 @@ public class MainLoader extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.ActivityTheme);
         //connecting binding
         binding = ActivityMainLoaderBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
@@ -117,7 +118,7 @@ public class MainLoader extends AppCompatActivity{
             int counter = 0;
             @Override
             public void run() {
-                counter++;
+                counter+=10;
                 binding.loadBarMainLoader.setProgress(counter);
                 if (counter == 100){
                     progressBarTimer.cancel();

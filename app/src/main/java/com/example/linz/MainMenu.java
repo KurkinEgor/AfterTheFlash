@@ -125,6 +125,11 @@ public class MainMenu extends AppCompatActivity{
         return intent;
     }
 
+    private void launchSinglePlayerFromMainMenu(){
+        Intent intent = LevelTest.newIntent(MainMenu.this, "George");
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //connecting binding
@@ -143,6 +148,8 @@ public class MainMenu extends AppCompatActivity{
 
         backgroundRender();
         buttonRender();
+
+        binding.buttonMainMenuSingle.setOnClickListener(v -> launchSinglePlayerFromMainMenu());
 
         Thread clouds_animation = new Thread(() -> {
             while (true) {
