@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/skyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sky" />
+
+    <ImageView
+        android:id="@+id/cloudsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clouds" />
+
+    <ImageView
+        android:id="@+id/cityImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/city" />
+
+    <Button
+        android:id="@+id/buttonMainMenuSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans_ms_pixel"
+        android:background="@color/dark_salad_green"
+        android:text="Button"/>
+
+    <Button
+        android:id="@+id/buttonMainMenuOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans_ms_pixel"
+        android:background="@color/dark_salad_green"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonMainMenuTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans_ms_pixel"
+        android:background="@color/dark_salad_green"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonMainMenuSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:maxHeight="20px"
+        android:text="Button" />
+
+
+</RelativeLayout>

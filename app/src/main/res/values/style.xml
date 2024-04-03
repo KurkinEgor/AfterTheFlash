@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--custom theme needs to get always dark mode-->
+
+<resources>
+    <style name="ActivityTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges <!-- default, shortEdges, or never -->
+        </item>
+    </style>
+</resources>
