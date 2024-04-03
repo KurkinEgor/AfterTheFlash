@@ -89,6 +89,7 @@ public class MainLoader extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.ActivityTheme);
         //connecting binding
         binding = ActivityMainLoaderBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);

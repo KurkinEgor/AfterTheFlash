@@ -8,4 +8,11 @@
             shortEdges <!-- default, shortEdges, or never -->
         </item>
     </style>
+
+    <style name="splashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges <!-- default, shortEdges, or never -->
+        </item>
+        <item name="android:windowBackground">@color/logo_green</item>
+    </style>
 </resources>
