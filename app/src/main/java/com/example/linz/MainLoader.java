@@ -35,6 +35,9 @@ public class MainLoader extends AppCompatActivity{
     public int cloudsMainMenuImageFinishPosition = Style.cloudsMainMenuImageFinishPosition;
     public int cloudsMainMenuImageBackward = Style.cloudsMainMenuImageBackward;
     public int cloudsStep = Style.cloudsMainMenuStep;
+    public float LogoMainMenuImageScale = Style.LogoMainMenuImageScale;
+    public int LogoMainMenuImageXPos = Style.LogoMainMenuImageXPos;
+    public int LogoMainMenuImageYPos = Style.LogoMainMenuImageYPos;
 
     Random rand = new Random();
     public int wind_speed = rand.nextInt(70)+10;
@@ -70,6 +73,13 @@ public class MainLoader extends AppCompatActivity{
         binding.imageView10.setX(0);
         binding.imageView10.setScaleX(deltaImageSize);
         binding.imageView10.setScaleY(deltaImageSize);
+
+        binding.logoImage.setImageResource(R.drawable.logo);
+        binding.logoImage.setScaleY(LogoMainMenuImageScale);
+        binding.logoImage.setScaleX(LogoMainMenuImageScale);
+        binding.logoImage.setX(LogoMainMenuImageXPos);
+        binding.logoImage.setY(LogoMainMenuImageYPos);
+
     }
 
     private void launchMainMenuFromLoader(){

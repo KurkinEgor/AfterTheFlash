@@ -36,6 +36,9 @@ public class MainMenu extends AppCompatActivity{
     public int cloudsStep = Style.cloudsMainMenuStep;
     public float buttonsMainMenuSettingScaleY = Style.ButtonsMainMenuSettingScaleY;
     public float buttonsMainMenuSettingScaleX = Style.ButtonsMainMenuSettingScaleX;
+    public float LogoMainMenuImageScale = Style.LogoMainMenuImageScale;
+    public int LogoMainMenuImageXPos = Style.LogoMainMenuImageXPos;
+    public int LogoMainMenuImageYPos = Style.LogoMainMenuImageYPos;
 
     Random rand = new Random();
     public int wind_speed = rand.nextInt(70)+10;
@@ -71,6 +74,12 @@ public class MainMenu extends AppCompatActivity{
         binding.cityImage.setX(0);
         binding.cityImage.setScaleX(deltaImageSize);
         binding.cityImage.setScaleY(deltaImageSize);
+
+        binding.logoImage.setImageResource(R.drawable.logo);
+        binding.logoImage.setScaleY(LogoMainMenuImageScale);
+        binding.logoImage.setScaleX(LogoMainMenuImageScale);
+        binding.logoImage.setX(LogoMainMenuImageXPos);
+        binding.logoImage.setY(LogoMainMenuImageYPos);
     }
 
     @SuppressLint("ResourceAsColor")

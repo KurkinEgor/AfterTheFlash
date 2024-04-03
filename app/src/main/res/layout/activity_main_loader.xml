@@ -46,4 +46,10 @@
     android:minHeight="100px"
     android:scaleY="5" />
 
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
 </RelativeLayout>

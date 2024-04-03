@@ -56,5 +56,11 @@
         android:maxHeight="20px"
         android:text="Button" />
 
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
 
 </RelativeLayout>

@@ -12,6 +12,10 @@ public class Style {
     public static final int LoaderProgressBarMainHeight = 100;
     public static final int LoaderProgressBarMainVerticalAlign = 150;
 
+    public static final float LogoMainMenuImageScale = 0.45F;
+    public static final int LogoMainMenuImageYPos = -350;
+    public static final int LogoMainMenuImageXPos = -30;
+
     public static final int ButtonsMainMenuPadding = 20;
     public static final int ButtonsMainMenuFontSize = 26;
     public static final float ButtonsMainMenuSettingScaleY = 0.2F;
