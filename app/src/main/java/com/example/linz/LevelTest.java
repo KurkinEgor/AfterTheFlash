@@ -20,7 +20,7 @@ public class LevelTest extends AppCompatActivity {
     public int screenHeight;
     public float screenRatio;
     public float backgroundImageScale;
-    public float toRealRatio;
+    public float scaleRatioForBackground;
     public float defScale;
 
     public int levelMapWidth = 3600;
@@ -73,13 +73,10 @@ public class LevelTest extends AppCompatActivity {
             levelMapWidthTheoretical = levelMapHeight * screenRatio;
             levelMapHeightTheoretical = levelMapHeight;
         }
+        scaleRatioForBackground = defScale/1.5F*levelMapHeight/plateHeight/plateForY;
         backgroundImageScale = screenHeight / levelMapHeightTheoretical;
-        binding.backgroundLevel.setScaleX(defScale/1.5F*levelMapHeight/plateHeight/plateForY); //=1
-        binding.backgroundLevel.setScaleY(defScale/1.5F*levelMapHeight/plateHeight/plateForY);
-
-        Log.d("Ter", String.valueOf(backgroundImageScale));
-
-
-
+        //binding.backgroundLevel.setX(120*scaleRatioForBackground/1.5F);
+        binding.backgroundLevel.setScaleX(scaleRatioForBackground);
+        binding.backgroundLevel.setScaleY(scaleRatioForBackground);
     }
 }
