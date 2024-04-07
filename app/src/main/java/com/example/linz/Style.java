@@ -27,5 +27,10 @@ public class Style {
     public static final int cloudsMainMenuImageBackward = 2630;
     public static final int cloudsMainMenuStep = 2;
 
-
+    public static final int mapPlateWidth = 120;
+    public static final int mapPlateHeight = 100;
+    public static final float plateForY = 10;
+    public static final float gamepadAlpha = 0.6F;
+    public static final float gamepadScale = 0.4F;
+    public static final float gemepadActionButtonRadius = 501;
 }

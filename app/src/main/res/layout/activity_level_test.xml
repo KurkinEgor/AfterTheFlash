@@ -13,4 +13,17 @@
         app:srcCompat="@drawable/test_plate_background"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/gamepad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_radio" />
+
+    <ImageView
+        android:id="@+id/gamepadActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gamepad_activ" />
+
 </RelativeLayout>
